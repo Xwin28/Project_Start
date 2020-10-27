@@ -1,0 +1,11 @@
+﻿Setting=Settings
+Language=Languages
+Back=Back
+Restart=Restart Game to Apply Language
+Name_1=Succubus
+S_1_1=Fuck You!
+S_1_2=I'll Come Home with you!!
+S_1_3=You are Dead Meat!!
+c_1=Watch You Mount!
+c_2=Come Home With me sweetie!
+nothing=...
