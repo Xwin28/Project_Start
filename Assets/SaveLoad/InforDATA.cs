@@ -7,7 +7,7 @@ public class InforDATA
 {
     public bool VolumeMusic;
     public bool VolumeSfx;
-    public int Music = 0; // pick music in array
+    public int m_Quality;//0 = low, 1 = medium, 2=high
     public string Language = "En";
     public int coin;
     public int coinpersecond;
@@ -32,7 +32,7 @@ public class InforDATA
         //System Infor
         VolumeMusic = true;
         VolumeSfx = false;
-        Music = 0; // pick music in array
+        m_Quality = 1;
         Language = "En";
         //COIN
         coin = 0;
@@ -62,7 +62,7 @@ public class InforDATA
         //System Infor
         VolumeMusic = _allInfor.VolumeMusic;
         VolumeSfx = _allInfor.VolumeSfx;
-        Music = _allInfor.Music; // pick music in array
+        m_Quality = _allInfor.Quality;
         Language = _allInfor.Language;
         //COIN
         coin = _allInfor.coin;

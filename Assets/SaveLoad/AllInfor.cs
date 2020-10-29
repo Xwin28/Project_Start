@@ -28,7 +28,7 @@ public class AllInfor : MonoBehaviour
 
     public bool VolumeMusic;
     public bool VolumeSfx;
-    public int Music = 0; // pick music in array
+    public int m_Quality;//0 = low, 1 = medium, 2=high
     public string Language = "En";
     public int coin;
     public int coinpersecond;
@@ -48,6 +48,14 @@ public class AllInfor : MonoBehaviour
     public bool[] Phong_12 = new bool[20];
 
     #region getset Block
+
+    public int Quality
+    {
+        get { return m_Quality; }
+        set { m_Quality = value; }
+    }    
+
+
     ///GET SET
     ///
     //GetPhong
@@ -178,10 +186,7 @@ public class AllInfor : MonoBehaviour
         this.VolumeSfx = VolumeSfx;
     }
 
-    public void setMusic(int Music)
-    {
-        this.Music = Music;
-    }
+
 
     public void setLanguage(string language)
     {
@@ -209,10 +214,6 @@ public class AllInfor : MonoBehaviour
         return VolumeSfx;
     }
 
-    public int getMusic()
-    {
-        return Music;
-    }
 
     public string getLanguage()
     {
@@ -252,7 +253,7 @@ public class AllInfor : MonoBehaviour
         InforDATA data = SAVESYS.LoadDATA();
         this.VolumeMusic = data.VolumeMusic;
         this.VolumeSfx = data.VolumeSfx;
-        this.Music = data.Music;
+        this.m_Quality = data.m_Quality;
         this.Language = data.Language;
         this.coin = data.coin;
         this.coinpersecond = data.coinpersecond;

@@ -24,14 +24,7 @@ public class AudioPlayer : MonoBehaviour
        
     }
 
-    public void Start()
-    {
-        GameObject allinfor = GameObject.FindGameObjectWithTag("DATA");
-        int temp = allinfor.GetComponent<AllInfor>().getMusic();
 
-        if (this.gameObject.name == "MusicPlayer")
-            Playmusic(temp);
-    }
 
 
     // Fade in MUSIC

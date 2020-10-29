@@ -1,5 +1,6 @@
 ﻿Setting=Settings
 Language=Languages
+Graphics=Graphics
 Back=Back
 Restart=Restart Game to Apply Language
 Name_1=Succubus

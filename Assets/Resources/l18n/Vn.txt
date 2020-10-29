@@ -1,5 +1,6 @@
 ﻿Setting=Cài Đặt
 Language=Ngôn Ngữ
+Graphics=Đồ Họa
 Back=Back
 Restart=Restart Game to Apply Language
 Name_1=Succubus
